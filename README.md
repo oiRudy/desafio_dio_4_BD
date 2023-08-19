@@ -18,3 +18,66 @@ Após a criação do esquema lógico, realize a criação do Script SQL para cri
  - Elabore perguntas que podem ser respondidas pelas consultas
  - As cláusulas podem estar presentes em mais de uma query
  - O projeto deverá ser adicionado a um repositório do Github para futura avaliação do desafio de projeto. Adicione ao Readme a descrição do projeto lógico para fornecer o contexto sobre seu esquema lógico apresentado.
+
+## Resolução
+
+#### > Mapeamento do esquema ERRelacional
+![Dio4](https://github.com/oiRudy/desafio_dio_4_BD/assets/139499341/d93c2ad8-ce35-48ea-9e64-70cc092183de)
+
+
+#### > Definição do script SQL para criação do esquema de banco de dados
+![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+Criação do banco de dados para cenário de Oficina Mecânica e criação das tabelas 
+
+#### > Persistência de dados para teste
+![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+
+#### > Recuperação de informação com queries SQL
+![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+
+Pergunta 1: Quantos clientes possuem autorizações concedidas?
+```sql
+SELECT COUNT(*) FROM autorizado WHERE statusosautorizada = 'Concluído';
+```
+Resposta: 3
+
+Pergunta 2: Qual a especialidade do mecânico responsável pela os 1003?
+```sql
+SELECT m.Especialidade FROM mecanico m
+JOIN consertoRevisao c ON m.idMecanicos = c.equipeMecanicos
+WHERE c.os = 1003;
+```
+Resposta: Suspensão
+
+Pergunta 3: Qual é o total gasto em mão de obra?
+```sql
+SELECT SUM(CAST(ValorMaoObra AS DECIMAL(10, 2))) FROM maoObra;
+```
+Resposta: 650.00
+
+Pergunta 4: Quais são os veículos com status "Aguardando Peças"?
+```sql
+SELECT v.Identificacao_veiculo FROM veiculo v
+JOIN autorizarNegar an ON v.idVeiculo = an.idVeiculo
+WHERE an.statusOs = 'Aguardando Peças';
+```
+Resposta: ABC123, DEF456
+
+Pergunta 5: Quais são os clientes que possuem pelo menos uma negação?
+```sql
+SELECT DISTINCT c.Nome FROM cliente c
+JOIN autorizarNegar an ON c.idCliente = an.idCliente
+WHERE an.negacao IS NOT NULL;
+```
+Resposta: João Santos, Pedro Oliveira
+
+## Aprendizados
+
+Durante o desafio, tive a chance de aplicar meus conhecimentos em SQL e criar um sistema funcional que simula um banco de dados de e-commerce. Fui capaz de aprimorar minhas habilidades e demonstrei minha capacidade de desenvolver soluções práticas e eficientes.
+
+![SQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) 
+![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=E94D5F) 
+
+## Referência
+
+ - [Potência Tech powered by iFood: Ciência de Dados com Python](https://web.dio.me/track/potencia-tech-powered-ifood-ciencias-de-dados-com-python)
