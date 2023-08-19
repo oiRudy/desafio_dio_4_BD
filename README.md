@@ -25,14 +25,13 @@ Após a criação do esquema lógico, realize a criação do Script SQL para cri
 ![Dio4](https://github.com/oiRudy/desafio_dio_4_BD/assets/139499341/d93c2ad8-ce35-48ea-9e64-70cc092183de)
 
 #### > Definição do script SQL para criação do esquema de banco de dados
-![script SQL DDL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/oficina_mecanica.sql))
-Criação do banco de dados para cenário de Oficina Mecânica e criação das tabelas 
+[script SQL DDL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/oficina_mecanica.sql))
 
 #### > Persistência de dados para teste
-![script SQL DML](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/inserts_oficina_mecanica.sql))
+[script SQL DML](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/inserts_oficina_mecanica.sql))
 
 #### > Recuperação de informação com queries SQL
-![script SQL DQL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/querys_oficina_mecanica.sql)
+[script SQL DQL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/querys_oficina_mecanica.sql)
 
 Pergunta 1: Quantos clientes possuem autorizações concedidas?
 ```sql
