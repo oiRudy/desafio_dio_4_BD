@@ -24,16 +24,15 @@ Após a criação do esquema lógico, realize a criação do Script SQL para cri
 #### > Mapeamento do esquema ERRelacional
 ![Dio4](https://github.com/oiRudy/desafio_dio_4_BD/assets/139499341/d93c2ad8-ce35-48ea-9e64-70cc092183de)
 
-
 #### > Definição do script SQL para criação do esquema de banco de dados
-![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+![script SQL DDL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/oficina_mecanica.sql))
 Criação do banco de dados para cenário de Oficina Mecânica e criação das tabelas 
 
 #### > Persistência de dados para teste
-![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+![script SQL DML](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/inserts_oficina_mecanica.sql))
 
 #### > Recuperação de informação com queries SQL
-![script SQL](https://github.com/oiRudy/desafio_dio_3_BD/assets/139499341/d28cb683-425a-4fec-a703-7df5e91a0e3b)
+![script SQL DQL](https://github.com/oiRudy/desafio_dio_4_BD/blob/main/querys_oficina_mecanica.sql)
 
 Pergunta 1: Quantos clientes possuem autorizações concedidas?
 ```sql
@@ -73,7 +72,7 @@ Resposta: João Santos, Pedro Oliveira
 
 ## Aprendizados
 
-Durante o desafio, tive a chance de aplicar meus conhecimentos em SQL e criar um sistema funcional que simula um banco de dados de e-commerce. Fui capaz de aprimorar minhas habilidades e demonstrei minha capacidade de desenvolver soluções práticas e eficientes.
+A criação desse banco de dados proporcionou insights sobre a estruturação de sistemas. Isso inclui a importância da modelagem de dados, a definição de relações entre tabelas e a utilização de consultas SQL para extrair informações relevantes. A experiência também revelou a necessidade de balancear normalização e eficiência, além de demonstrar como as junções entre tabelas ampliam a visão dos dados. 
 
 ![SQL](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white) 
 ![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=E94D5F) 
